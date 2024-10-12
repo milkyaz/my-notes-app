@@ -1,9 +1,9 @@
 import "./css/Note.css";
 
 function CreateNote({ textHandler, saveHandler, inputText }) {
-  //character limit
+  // characterlimit
   const charLimit = 300;
-  const charLeft = charLimit - inputText.length;
+  const charLeft = charLimit - (inputText || "").length;
   return (
     <div className="note" style={{ background: "rgba(255, 255, 255, 0)" }}>
       <textarea
